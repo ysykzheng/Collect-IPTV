@@ -13,15 +13,17 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: '24' # 建议使用最新的 LTS 版本
 
-      - name: Install ffmpeg
-        run: apt update && apt install -y ffmpeg
+      - name: Install FFmpeg
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
 
       - name: Install iptv-checker
         run: npm install -g iptv-checker
