@@ -18,7 +18,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20' # 建议使用最新的 LTS 版本
+          node-version: '24' # 建议使用最新的 LTS 版本
 
       - name: Install iptv-checker
         run: npm install -g iptv-checker
