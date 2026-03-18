@@ -9,7 +9,7 @@ https://ysykzheng.github.io/Collect-IPTV/
 
 <!-- Generated File Link m3u8 --> [View Generated File](https://raw.githubusercontent.com/ysykzheng/Collect-IPTV/refs/heads/main/best_sorted.m3u8)
 
-https://github.com/ysykzheng/Collect-IPTV/blob/main/iptv-output/online.m3u
+<!-- Generated File Link online --> [View Generated File](https://raw.githubusercontent.com/ysykzheng/Collect-IPTV/refs/heads/main/iptv-output/online.m3u)
 
 ## 💡 使用说明
 1. 点击上方「下载 M3U/M3U8 文件」获取最新节目源
@@ -17,4 +17,4 @@ https://github.com/ysykzheng/Collect-IPTV/blob/main/iptv-output/online.m3u
 3. 节目源每 4 小时自动更新，建议定期重新下载
 ## ⭐️Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=ysykzheng/Collect-IPTV&type=Date)](https://star-history.com/#ysykzheng/Collect-IPTV&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=ysykzheng/Collect-IPTV&type=Date)](https://star-history.com/#zilong7728/Collect-IPTV&Date)
