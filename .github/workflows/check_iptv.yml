@@ -20,6 +20,9 @@ jobs:
         with:
           node-version: '24' # 建议使用最新的 LTS 版本
 
+      - name: Install ffmpeg
+        run: apt update && apt install -y ffmpeg
+
       - name: Install iptv-checker
         run: npm install -g iptv-checker
 
