@@ -66,6 +66,16 @@ jobs:
               if i + 1 < len(content):
                   inf_line = content[i]
                   url_line = content[i+1]
+
+                  # --- 核心修改：去除 tvg-name 内部的空格并更新整行文本 ---
+                  # 使用正则表达式匹配 tvg-name="内容"，并对内容进行 strip()
+                  def clean_tvg_name(match):
+                      inner_text = match.group(1).strip()
+                      return f'tvg-name="{inner_text}"'
+
+                  # 更新 inf_line 中的 tvg-name 部分
+                  inf_line = re.sub(r'tvg-name="([^"]+)"', clean_tvg_name, inf_line)
+                  
                   # 1. 提取 group-title 并 trim
                   group_match = re.search(r'group-title="([^"]+)"', inf_line)
                   group_name = group_match.group(1).strip() if group_match else "Unsorted"
