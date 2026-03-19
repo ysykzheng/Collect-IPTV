@@ -228,10 +228,10 @@ def generate_sorted_m3u(valid_urls, cctv_channels, province_channels, filename):
                    other_channels
 
     # 生成 m3u8 的文件名 (将后缀 .m3u 替换为 .m3u8)
-    m3u8_filename = filename.replace('.m3u', '.m3u8')
+    # m3u8_filename = filename.replace('.m3u', '.m3u8')
     
     # 写入 M3U 和 M3U8 文件
-    for fname in [filename, m3u8_filename]:
+    for fname in [filename]:
         with open(fname, 'w', encoding='utf-8') as f:
             f.write("#EXTM3U\n")
             for channel_info in all_channels:
