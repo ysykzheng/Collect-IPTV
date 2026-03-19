@@ -33,6 +33,46 @@ jobs:
           # 确保输入文件 best_sorted.m3u 存在于你的仓库根目录
           iptv-checker -o iptv-output -p 10 -k best_sorted.m3u
 
+      - name: Sort online.m3u by group-title
+        shell: python
+        run: |
+          import re
+          import os
+
+          file_path = 'iptv-output/online.m3u'
+          if not os.path.exists(file_path):
+              print("File not found, skipping sort.")
+              exit(0)
+
+          with open(file_path, 'r', encoding='utf-8') as f:
+              lines = f.readlines()
+
+          header = lines[0] if lines[0].startswith('#EXTM3U') else ''
+          content = lines[1:] if header else lines
+          
+          # 将 #EXTINF 和 URL 成对组合
+          entries = []
+          for i in range(0, len(content), 2):
+              if i + 1 < len(content):
+                  inf_line = content[i]
+                  url_line = content[i+1]
+                  # 提取 group-title="xxx" 的内容
+                  group = re.search(r'group-title="([^"]+)"', inf_line)
+                  group_name = group.group(1) if group else "Unsorted"
+                  entries.append((group_name, inf_line, url_line))
+
+          # 按 group_name 排序
+          entries.sort(key=lambda x: x[0])
+
+          # 写回文件
+          with open(file_path, 'w', encoding='utf-8') as f:
+              if header:
+                  f.write(header)
+              for entry in entries:
+                  f.write(entry[1])
+                  f.write(entry[2])
+          print("Sorting completed by group-title.")
+
       - name: Commit and Push results
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
