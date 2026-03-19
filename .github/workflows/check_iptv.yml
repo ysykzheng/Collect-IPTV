@@ -66,8 +66,6 @@ jobs:
               if i + 1 < len(content):
                   inf_line = content[i]
                   url_line = content[i+1]
-                  # 提取 group-title="xxx" 的内容
-
                   # 1. 提取 group-title 并 trim
                   group_match = re.search(r'group-title="([^"]+)"', inf_line)
                   group_name = group_match.group(1).strip() if group_match else "Unsorted"
@@ -75,27 +73,32 @@ jobs:
                   # 2. 提取 tvName 并 trim
                   # M3U 标准格式通常是 #EXTINF:-1 tvg-id="..." ..., 频道名称
                   # 我们提取最后一个逗号之后的所有内容作为频道名
-                  tv_name_match = re.search(r',\s*(.+)$', inf_line)
-                  tv_name = tv_name_match.group(1).strip() if tv_name_match else "Unknown"
-                  # 将排序字段放入元组的第一位
-                  # entries.append(((group_name, tv_name), inf_line, url_line))
+                  # tv_name_match = re.search(r',\s*(.+)$', inf_line)
+                  # tv_name = tv_name_match.group(1).strip() if tv_name_match else "Unknown"
+
+                  # 2. 提取 tvg-name 并 trim
+                  tvg_name_match = re.search(r'tvg-name="([^"]+)"', inf_line)
+                  # 3. 提取 频道显示名称 (逗号后的内容) 作为备份
+                  display_name_match = re.search(r',\s*(.+)$', inf_line)
+                  
+                  # 优先级：tvg-name > 频道显示名称 > "Unknown"
+                  if tvg_name_match:
+                      sort_name = tvg_name_match.group(1).strip()
+                  elif display_name_match:
+                      sort_name = display_name_match.group(1).strip()
+                  else:
+                      sort_name = "Unknown"
+
                   # 存储原始行，但排序时使用 natural_sort_key 生成的键
                   entries.append({
                       'group_key': natural_sort_key(group_name),
-                      'name_key': natural_sort_key(tv_name),
+                      'name_key': natural_sort_key(sort_name),
                       'inf': inf_line,
                       'url': url_line
                   })
 
-                  # group = re.search(r'group-title="([^"]+)"', inf_line)
-                  # group_name = group.group(1) if group else "Unsorted"
-                  # group_name = group_name.strip()
-                  # tvName = re.search(r'group-title="[^"]+", ([^"]+)$', inf_line)
-                  # tvName = tvName.group(1) if tvName else "Unknown"
-                  # entries.append((group_name,tvName, inf_line, url_line))
 
-          # 按 group_name 排序
-          # entries.sort(key=lambda x: x[0])
+          # 按 group_name 排序，如果 group_name 相同则按 tv_name 排序
           entries.sort(key=lambda x: (x['group_key'], x['name_key']))
 
           # 写回文件
@@ -103,11 +106,10 @@ jobs:
               if header:
                   f.write(header.strip() + '\n')
               for entry in entries:
-                  # f.write(entry[1])
-                  # f.write(entry[2])
                   f.write(entry['inf'])
                   f.write(entry['url'])
-          # print("Sorting completed by group-title.")
+                  # f.write(entry['inf'] + '\n')
+                  # f.write(entry['url'] + '\n')
           print(f"Sorting completed. Processed {len(entries)} channels by Group and Name.")
 
       - name: Commit and Push results
