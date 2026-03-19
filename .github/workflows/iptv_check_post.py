@@ -26,7 +26,7 @@ def contains_date(text):
 CONFIG = {
     "timeout": 10,  # Timeout in seconds
     "max_parallel": 30,  # Max concurrent requests
-    "output_file": "best_sorted.m3u",  # Output file for the sorted M3U
+    "output_file": "iptv-output/online.m3u",  # Output file for the sorted M3U
     "iptv_directory": "IPTV"  # Directory containing IPTV files
 }
 
@@ -290,19 +290,7 @@ async def main(file_urls, cctv_channel_file, province_channel_files):
 if __name__ == "__main__":
     # IPTV 文件 URL（您可以添加自己的文件 URL 列表）
     file_urls = [
-        "https://tzdr.com/iptv.txt",
-        "https://raw.githubusercontent.com/vbskycn/iptv/refs/heads/master/tv/iptv4.m3u",
-        "https://m3u.ibert.me/ycl_iptv.m3u",
-        "https://live.zbds.top/tv/iptv4.m3u",
-        "https://raw.githubusercontent.com/Guovin/iptv-api/gd/output/ipv4/result.m3u",
-        "https://raw.githubusercontent.com/YueChan/Live/refs/heads/main/IPTV.m3u",
-        "https://raw.githubusercontent.com/Kimentanm/aptv/master/m3u/iptv.m3u",
-        "https://raw.githubusercontent.com/BurningC4/Chinese-IPTV/master/TV-IPV4.m3u",
-        "https://raw.githubusercontent.com/zwc456baby/iptv_alive/refs/heads/master/live.m3u",
-        "https://raw.githubusercontent.com/suxuang/myIPTV/refs/heads/main/ipv4.m3u",
-        "https://raw.githubusercontent.com/lalifeier/IPTV/main/m3u/IPTV.m3u",
-        "https://raw.githubusercontent.com/skddyj/iptv/refs/heads/main/IPTV.m3u",
-        "https://raw.githubusercontent.com/CCSH/IPTV/refs/heads/main/live.m3u",
+        "https://raw.githubusercontent.com/ysykzheng/Collect-IPTV/refs/heads/main/iptv-output/online.m3u",
     ]
 
     # CCTV 频道文件（例如 IPTV/CCTV.txt）
