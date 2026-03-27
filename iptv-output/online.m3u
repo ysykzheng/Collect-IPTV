@@ -371,8 +371,6 @@ http://112.27.235.94:8000/hls/48/index.m3u8
 https://satellitepull.cnr.cn/live/wx32dycjgb/playlist.m3u8
 #EXTINF:-1 tvg-name="东莞新闻综合" tvg-logo="https://live.fanmingming.cn/tv/东莞新闻综合.png" group-title="上海频道",东莞新闻综合
 https://stream.sun0769.com/dgrtv1/mp4tv1_800/index.m3u8
-#EXTINF:-1 tvg-name="平湖新闻综合" tvg-logo="https://live.fanmingming.cn/tv/平湖新闻综合.png" group-title="上海频道",平湖新闻综合
-http://play-sh13.quklive.com/live/1690167908295069.m3u8?auth_key=2027466211-f190eec410c24473825cbe1d8541e545-0-f21db57ae1b534802c1cf7be86cc3aef
 #EXTINF:-1 tvg-name="北京新闻" tvg-logo="https://live.fanmingming.cn/tv/北京新闻.png" group-title="北京频道",北京新闻
 http://114.242.62.109:888/hls/25/index.m3u8
 #EXTINF:-1 tvg-name="北京生活" tvg-logo="https://live.fanmingming.cn/tv/北京生活.png" group-title="北京频道",北京生活
@@ -483,10 +481,6 @@ http://38.64.72.148/hls/modn/list/4005/chunklist0.m3u8
 http://38.64.72.148/hls/modn/list/4005/playlist.m3u8
 #EXTINF:-1 tvg-name="TVBS亚洲" tvg-logo="https://live.fanmingming.cn/tv/TVBS亚洲.png" group-title="其他频道",TVBS亚洲
 http://38.64.72.148/hls/modn/list/4005/chunklist1.m3u8
-#EXTINF:-1 tvg-name="TVB无线新闻" tvg-logo="https://live.fanmingming.cn/tv/TVB无线新闻.png" group-title="其他频道",TVB无线新闻
-http://74.91.26.218:82/live/inews.m3u8
-#EXTINF:-1 tvg-name="TVB翡翠" tvg-logo="https://live.fanmingming.cn/tv/TVB翡翠.png" group-title="其他频道",TVB翡翠
-http://74.91.26.218:82/live/jade.m3u8
 #EXTINF:-1 tvg-name="万州影视" tvg-logo="https://live.fanmingming.cn/tv/万州影视.png" group-title="其他频道",万州影视
 http://123.146.162.24:8017/d4ceB1a/1000/live.m3u8
 #EXTINF:-1 tvg-name="三立戏剧" tvg-logo="https://live.fanmingming.cn/tv/三立戏剧.png" group-title="其他频道",三立戏剧
