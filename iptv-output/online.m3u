@@ -403,7 +403,3 @@ http://61.221.215.25:8800/hls/48/index.m3u8
 http://112.46.105.20:8009/hls/28/index.m3u8
 #EXTINF:-1 tvg-name="重温经典" tvg-logo="https://live.fanmingming.cn/tv/重温经典.png" group-title="其他频道",重温经典
 http://112.27.235.94:8000/hls/50/index.m3u8
-#EXTINF:-1 tvg-name="陕西秦腔" tvg-logo="https://live.fanmingming.cn/tv/陕西秦腔.png" group-title="其他频道",陕西秦腔
-http://112.46.105.20:8009/hls/22/index.m3u8
-#EXTINF:-1 tvg-name="陕西银龄" tvg-logo="https://live.fanmingming.cn/tv/陕西银龄.png" group-title="其他频道",陕西银龄
-http://112.46.105.20:8009/hls/20/index.m3u8
