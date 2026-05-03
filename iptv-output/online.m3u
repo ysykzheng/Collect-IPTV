@@ -331,8 +331,6 @@ http://112.99.193.34:9901/tsfile/live/1025_1.m3u8?key=txiptv&amp;playlive=1&amp;
 http://112.99.193.34:9901/tsfile/live/1027_1.m3u8?key=txiptv&amp;playlive=1&amp;authid=0
 #EXTINF:-1 tvg-name="CGTN" tvg-logo="https://live.fanmingming.cn/tv/CGTN.png" group-title="其他频道",CGTN
 http://112.27.235.94:8000/hls/17/index.m3u8
-#EXTINF:-1 tvg-name="KCTV 광주" tvg-logo="https://live.fanmingming.cn/tv/KCTV 광주.png" group-title="其他频道",KCTV 광주
-http://119.77.96.184:1935/chn05/chn05/chunklist_w1306745753.m3u8
 #EXTINF:-1 tvg-name="SBS" tvg-logo="https://live.fanmingming.cn/tv/SBS.png" group-title="其他频道",SBS
 http://1.222.207.80:1935/live/cjbtv/chunklist_w1357270949.m3u8
 #EXTINF:-1 tvg-name="TVBS NEWS" tvg-logo="https://live.fanmingming.cn/tv/TVBS NEWS.png" group-title="其他频道",TVBS NEWS
