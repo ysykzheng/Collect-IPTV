@@ -323,12 +323,6 @@ http://61.221.215.25:8800/hls/41/index.m3u8
 http://61.221.215.25:8800/hls/47/index.m3u8
 #EXTINF:-1 tvg-name="中天新闻" tvg-logo="https://live.fanmingming.cn/tv/中天新闻.png" group-title="其他频道",中天新闻
 http://222.128.55.152:9080/live/fc.m3u8
-#EXTINF:-1 tvg-name="中视新闻" tvg-logo="https://live.fanmingming.cn/tv/中视新闻.png" group-title="其他频道",中视新闻
-http://74.91.26.218:82/live/ctvnews.m3u8
-#EXTINF:-1 tvg-name="中视经典" tvg-logo="https://live.fanmingming.cn/tv/中视经典.png" group-title="其他频道",中视经典
-http://74.91.26.218:82/live/ctvjd.m3u8
-#EXTINF:-1 tvg-name="中视菁采" tvg-logo="https://live.fanmingming.cn/tv/中视菁采.png" group-title="其他频道",中视菁采
-http://74.91.26.218:82/live/ctvjc.m3u8
 #EXTINF:-1 tvg-name="刘德华" tvg-logo="https://live.fanmingming.cn/tv/刘德华.png" group-title="其他频道",刘德华
 http://74.91.26.218:82/live/vlldh.m3u8
 #EXTINF:-1 tvg-name="动物星球" tvg-logo="https://live.fanmingming.cn/tv/动物星球.png" group-title="其他频道",动物星球
