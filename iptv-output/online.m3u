@@ -31,8 +31,6 @@ http://112.27.235.94:8000/hls/14/index.m3u8
 http://112.27.235.94:8000/hls/15/index.m3u8
 #EXTINF:-1 tvg-name="CCTV15" tvg-logo="https://live.fanmingming.cn/tv/CCTV15.png" group-title="央视频道",CCTV15
 http://112.27.235.94:8000/hls/16/index.m3u8
-#EXTINF:-1 tvg-name="CCTV-5+" tvg-logo="https://live.fanmingming.cn/tv/CCTV-5+.png" group-title="央视频道",CCTV-5+
-http://223.112.114.228:50080/newlive/live/hls/180/live.m3u8
 #EXTINF:-1 tvg-name="CCTV风云足球" tvg-logo="https://live.fanmingming.cn/tv/CCTV风云足球.png" group-title="央视频道",CCTV风云足球
 http://202.102.201.244:40022/rtp/238.1.79.57:4592
 #EXTINF:-1 tvg-name="CGTN俄语" tvg-logo="https://live.fanmingming.cn/tv/CGTN俄语.png" group-title="央视频道",CGTN俄语
