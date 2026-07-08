@@ -63,8 +63,6 @@ http://player.cntv.cn/standard/live_HLSDRM20180919.swf?v=180.171.5.8.9.6.3.9&Cha
 http://38.75.136.137:98/gslb/dsdqpub/scwshd.m3u8?auth=testpub
 #EXTINF:-1 tvg-name="四川卫视" tvg-logo="https://live.fanmingming.cn/tv/四川卫视.png" group-title="卫视频道",四川卫视
 http://112.27.235.94:8000/hls/35/index.m3u8
-#EXTINF:-1 tvg-name="大湾区卫视" tvg-logo="https://live.fanmingming.cn/tv/大湾区卫视.png" group-title="卫视频道",大湾区卫视
-http://222.128.55.152:9080/live/dwq.m3u8
 #EXTINF:-1 tvg-name="天津卫视" tvg-logo="https://live.fanmingming.cn/tv/天津卫视.png" group-title="卫视频道",天津卫视
 http://112.27.235.94:8000/hls/42/index.m3u8
 #EXTINF:-1 tvg-name="安徽卫视" tvg-logo="https://live.fanmingming.cn/tv/安徽卫视.png" group-title="卫视频道",安徽卫视
@@ -129,14 +127,10 @@ http://61.221.215.25:8800/hls/9/index.m3u8
 http://61.221.215.25:8800/hls/41/index.m3u8
 #EXTINF:-1 tvg-name="中天娱乐" tvg-logo="https://live.fanmingming.cn/tv/中天娱乐.png" group-title="其他频道",中天娱乐
 http://61.221.215.25:8800/hls/47/index.m3u8
-#EXTINF:-1 tvg-name="中天新闻" tvg-logo="https://live.fanmingming.cn/tv/中天新闻.png" group-title="其他频道",中天新闻
-http://222.128.55.152:9080/live/fc.m3u8
 #EXTINF:-1 tvg-name="动物星球" tvg-logo="https://live.fanmingming.cn/tv/动物星球.png" group-title="其他频道",动物星球
 http://61.221.215.25:8800/hls/57/index.m3u8
 #EXTINF:-1 tvg-name="合肥新闻" tvg-logo="https://live.fanmingming.cn/tv/合肥新闻.png" group-title="其他频道",合肥新闻
 http://112.27.235.94:8000/hls/18/index.m3u8
-#EXTINF:-1 tvg-name="寰宇新闻" tvg-logo="https://live.fanmingming.cn/tv/寰宇新闻.png" group-title="其他频道",寰宇新闻
-http://222.128.55.152:9080/live/hy.m3u8
 #EXTINF:-1 tvg-name="有线新闻" tvg-logo="https://live.fanmingming.cn/tv/有线新闻.png" group-title="其他频道",有线新闻
 http://61.10.2.141:80/live_freedirect/freehd209_h.live/chunklist.m3u8
 #EXTINF:-1 tvg-name="有线新闻" tvg-logo="https://live.fanmingming.cn/tv/有线新闻.png" group-title="其他频道",有线新闻
