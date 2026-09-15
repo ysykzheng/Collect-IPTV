@@ -3,7 +3,7 @@
 ## 📺️TV station list
 https://ysykzheng.github.io/Collect-IPTV/
 ## ⏱️Last Run Time
-<!-- Last Run Time --> 2026-09-15 17:50:31 CST
+<!-- Last Run Time --> 2026-09-16 00:36:06 CST
 ## 🔗Generated File Link
 <!-- Generated File Link --> [View Generated File](https://raw.githubusercontent.com/ysykzheng/Collect-IPTV/refs/heads/main/best_sorted.m3u)
 
